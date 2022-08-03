@@ -259,9 +259,7 @@ public class AI extends Thread {
             NNData dataFC = (NNData) oisFC.readObject();
             neuralNetwork.load(dataFC);
 
-        } catch (IOException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+        } catch (IOException | ClassNotFoundException ignored) {}
 
         propagation();
         neuralNetwork.propagation();
