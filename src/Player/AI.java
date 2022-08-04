@@ -38,7 +38,7 @@ public class AI extends Thread {
         convolutionalNetwork = new CNN();
         neuralNetwork = new NN();
         convolutionalNetwork.buildConvolutionLayers();
-        neuralNetwork.ebenenErstellen();
+        neuralNetwork.buildLayers();
         propagation();
         updateGUILayerInfo();
 
@@ -287,7 +287,7 @@ public class AI extends Thread {
     private void reset(){
         convolutionalNetwork.reset();
         propagation();
-        neuralNetwork.ebenenErstellen();
+        neuralNetwork.buildLayers();
         neuralNetwork.propagation();
     }
 
