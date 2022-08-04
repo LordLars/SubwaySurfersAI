@@ -1,7 +1,7 @@
 package GUI;
 
-import General.Action;
-import General.Settings;
+import Main.Action;
+import Main.Settings;
 
 import javax.swing.*;
 import java.awt.*;

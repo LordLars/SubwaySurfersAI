@@ -1,4 +1,4 @@
-package General;
+package Main;
 
 import Data.DataManager;
 import GUI.GUIManager;

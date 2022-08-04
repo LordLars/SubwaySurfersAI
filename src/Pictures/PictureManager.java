@@ -1,8 +1,8 @@
 package Pictures;
 
-import General.Action;
-import General.AIState;
-import General.Settings;
+import Main.Action;
+import Main.AIState;
+import Main.Settings;
 
 import javax.imageio.ImageIO;
 import java.awt.*;

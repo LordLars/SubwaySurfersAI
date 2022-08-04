@@ -1,8 +1,8 @@
 package Starter;
 
-import General.AIState;
-import General.Main;
-import General.Settings;
+import Main.AIState;
+import Main.Main;
+import Main.Settings;
 import Data.DataUpdater;
 
 public class StarterClass {

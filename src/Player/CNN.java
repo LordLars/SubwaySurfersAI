@@ -1,6 +1,6 @@
 package Player;
 
-import General.Settings;
+import Main.Settings;
 
 import java.awt.image.BufferedImage;
 

@@ -1,4 +1,4 @@
-package General;
+package Main;
 
 import Data.DataUpdater;
 
@@ -6,9 +6,9 @@ public class Settings {
 
     public static AIState aiState = AIState.Learn;
     public static int aiCount = 15;
+    public static boolean overwrite = true;
 
     //region GENERAL
-    public static boolean overwrite = false;
     public static boolean running = true;
 
     //How many pictures it can learn until gets saved

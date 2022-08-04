@@ -1,4 +1,4 @@
-package General;
+package Main;
 
 import java.awt.event.KeyEvent;
 

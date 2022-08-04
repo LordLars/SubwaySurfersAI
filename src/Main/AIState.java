@@ -1,4 +1,4 @@
-package General;
+package Main;
 
 public enum AIState {
     Data,

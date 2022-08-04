@@ -1,9 +1,9 @@
 package Player;
 
-import General.Action;
-import General.AIState;
+import Main.Action;
+import Main.AIState;
 import Pictures.PictureManager;
-import General.Settings;
+import Main.Settings;
 import GUI.GUIManager;
 
 import java.awt.*;
