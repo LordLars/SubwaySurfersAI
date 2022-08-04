@@ -220,8 +220,8 @@ public class AI extends Thread {
         if(Settings.overwrite || accuracy > getSavedAccuracy()) {
             Settings.stopOverwriting();
             try{
-                FileOutputStream cnnFile = new FileOutputStream("cnnSave.dat");
-                FileOutputStream fcFile = new FileOutputStream("fcSave.dat");
+                FileOutputStream cnnFile = new FileOutputStream("Saves//cnnSave.dat");
+                FileOutputStream fcFile = new FileOutputStream("Saves//fcSave.dat");
                 BufferedOutputStream bfCNN = new BufferedOutputStream(cnnFile);
                 BufferedOutputStream bfFC = new BufferedOutputStream(fcFile);
                 ObjectOutputStream objCNN = new ObjectOutputStream(bfCNN);
@@ -246,14 +246,14 @@ public class AI extends Thread {
     private void load() {
         try {
             System.out.println("Load");
-            FileInputStream fisCNN = new FileInputStream("cnnSave.dat");
+            FileInputStream fisCNN = new FileInputStream("Saves//cnnSave.dat");
             BufferedInputStream bisCNN = new BufferedInputStream(fisCNN);
             ObjectInputStream oisCNN = new ObjectInputStream(bisCNN);
 
             CNNData dataCNN = (CNNData) oisCNN.readObject();
             convolutionalNetwork.load(dataCNN);
 
-            FileInputStream fisFC = new FileInputStream("fcSave.dat");
+            FileInputStream fisFC = new FileInputStream("Saves//fcSave.dat");
             BufferedInputStream bisFC = new BufferedInputStream(fisFC);
             ObjectInputStream oisFC = new ObjectInputStream(bisFC);
             NNData dataFC = (NNData) oisFC.readObject();
@@ -270,7 +270,7 @@ public class AI extends Thread {
      */
     private float getSavedAccuracy(){
         try {
-            FileInputStream fisFC = new FileInputStream("fcSave.dat");
+            FileInputStream fisFC = new FileInputStream("Saves//fcSave.dat");
             BufferedInputStream bisFC = new BufferedInputStream(fisFC);
             ObjectInputStream oisFC = new ObjectInputStream(bisFC);
 
